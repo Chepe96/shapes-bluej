@@ -7,6 +7,10 @@ class Casa
    Square puerta;
    
    //constructor
+   /**
+    * Se cran nuevos objetos de ventana, techo, pared y puerta, dentro del 
+    * constructor.
+    */
    Casa()
    {
        ventana = new Circle();
@@ -16,6 +20,9 @@ class Casa
    }
    
    //metodos
+   /**
+    * Este metodo dibuja y colorea los elementos de la casa.
+    */
    void dibujate()
    {
        techo.changeSize(70,150);
@@ -31,6 +38,10 @@ class Casa
        puerta.makeVisible();
    }
    
+   /**
+    * Este metodo acomoda todos los elementos de la casa y les da una posicion
+    * determinada a cada objeto.
+    */
    void acomodate()
    {
        //colocar los objetos en la posicion
